@@ -1,6 +1,10 @@
 {
   "name": "calculator-on-vue",
+  "private": true,
   "version": "0.0.0",
+  "description": "It's the simple calculator on Vue 3",
+  "author": "Yuri Mikushov",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
