@@ -1,10 +1,14 @@
 <template>
-  <p>Soon</p>
+  <calculator></calculator>
 </template>
 
 <script>
+import Calculator from './components/Calculator.vue'
+
 export default {
   name: 'App',
-  components: {}
+  components: {
+    calculator: Calculator,
+  },
 }
 </script>
