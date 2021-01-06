@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Calculator from './components/Calculator.vue'
+import Calculator from './components/Calculator'
 
 export default {
   name: 'App',
