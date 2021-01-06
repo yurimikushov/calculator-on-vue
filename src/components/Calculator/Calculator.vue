@@ -80,6 +80,27 @@ export default {
           .replaceAll(MATH_OPERATOR.DIVISION, MATH_OPERATOR.AlT_DIVISION)
       }
     },
+    keyDownHandler : function (e) {
+      const enteredValue = e.key
+
+      if (isNumber(enteredValue) || isMathOperator(enteredValue)) {
+        this.showEnteredValue(enteredValue)
+      } else if (isSeparator(enteredValue)) {
+        this.showEnteredValue(SERVISE_OPERATOR.SEPARATOR)
+      } else if (isAssignmentOperator(enteredValue)) {
+        this.showResult()
+      } else if (isDeleteOperator(enteredValue)) {
+        this.deleteLastEnteredValue()
+      } else if (isClearOperator(enteredValue)) {
+        this.clearEnteredValues()
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('keydown', this.keyDownHandler)
+  },
+  unmounted() {
+    window.removeEventListener('keydown', this.keyDownHandler)
   },
 }
 </script>
