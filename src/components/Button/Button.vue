@@ -1,15 +1,14 @@
 <template>
-  <button :class="'button ' + className" @click="(e) => onClick(e.target.innerText)">
+  <button class="button" @click="(e) => onClick(e.target.innerText)">
     {{ title }}
   </button>
 </template>
 
 <script>
 export default {
-  name: 'Screen',
+  name: 'Button',
   props: {
     title: String,
-    className: String,
     onClick: Function,
   },
 }
@@ -27,19 +26,6 @@ export default {
 
 .button:hover {
   opacity: 0.95;
-}
-
-.button_top-operators {
-  background-color: var(--top-operator-button-bg-color);
-}
-
-.button_numbers {
-  background-color: var(--num-button-bg-color);
-}
-
-.button_right-side-operators {
-  background-color: var(--right-side-operator-button-bg-color);
-  color: #fff;
 }
 
 @media screen and (max-width: 720px) {
