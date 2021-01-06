@@ -19,6 +19,10 @@ import DarkModeButton from './DarkModeButton.vue'
 
 export default {
   name: 'Screen',
+  props: {
+    previewResult: String,
+    result: String,
+  },
   components: {
     'dark-mode-button': DarkModeButton,
   },
