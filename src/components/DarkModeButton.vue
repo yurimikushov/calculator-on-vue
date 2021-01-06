@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="'dark-mode-button' + (className ? ' ' + className : '')"
+    class="dark-mode-button"
     @click="toggle"
   >
     {{ theme.name === THEME_NAME.DARK ? '☀️' : '🌙' }}
@@ -10,9 +10,6 @@
 <script>
 export default {
   name: 'DarkModeButton',
-  props: {
-    className: String,
-  },
   data() {
     return {
       theme: {
