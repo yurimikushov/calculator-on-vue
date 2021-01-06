@@ -80,7 +80,7 @@ export default {
           .replaceAll(MATH_OPERATOR.DIVISION, MATH_OPERATOR.AlT_DIVISION)
       }
     },
-    keyDownHandler : function (e) {
+    keyDownHandler: function (e) {
       const enteredValue = e.key
 
       if (isNumber(enteredValue) || isMathOperator(enteredValue)) {

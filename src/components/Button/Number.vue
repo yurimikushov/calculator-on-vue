@@ -1,9 +1,5 @@
 <template>
-  <calc-button
-    class="button_number" 
-    :title="title" 
-    :onClick="onClick" >
-  </calc-button>
+  <calc-button class="button_number" :title="title" :onClick="onClick"> </calc-button>
 </template>
 
 <script>

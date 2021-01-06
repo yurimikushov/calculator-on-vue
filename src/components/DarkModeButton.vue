@@ -1,8 +1,5 @@
 <template>
-  <button
-    class="dark-mode-button"
-    @click="toggle"
-  >
+  <button class="dark-mode-button" @click="toggle">
     {{ theme.name === THEME_NAME.DARK ? '☀️' : '🌙' }}
   </button>
 </template>

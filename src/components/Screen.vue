@@ -1,8 +1,8 @@
 <template>
   <div class="screen">
-    <dark-mode-button class='position_top-left pt-10 pl-10'></dark-mode-button>
+    <dark-mode-button class="position_top-left pt-10 pl-10"></dark-mode-button>
     <span class="screen__preview-result position_top-right pt-10 pr-10 pl-50">
-      {{previewResult}}
+      {{ previewResult }}
     </span>
     <input
       class="screen__result position_bottom"

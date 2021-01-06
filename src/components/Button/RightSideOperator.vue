@@ -1,8 +1,5 @@
 <template>
-  <calc-button
-    class="button_right-side-operator" 
-    :title="title" 
-    :onClick="onClick" >
+  <calc-button class="button_right-side-operator" :title="title" :onClick="onClick">
   </calc-button>
 </template>
 
